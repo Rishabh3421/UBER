@@ -5,6 +5,7 @@ const DbConn = require("./database/DBCon.js");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 const userRoutes = require("../backend/routes/user.routes.js");
+const captainRoutes = require("../backend/routes/captain.routes.js")
 
 const app = express();
 // Database connection
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(cookieParser());
 
 app.use("/api/user", userRoutes);
+app.use("/api/captain", captainRoutes);
 
 app.get("/", (req, res) => {
   res.send("hello world");

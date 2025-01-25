@@ -1,12 +1,12 @@
 # Backend Documentation
 
-This document outlines the structure and functionality of the backend codebase.
+This document outlines the structure and functionality of the backend codebase, including the newly added user authentication features.
 
 ## Controllers
 
 ### user.controllers.js
 
-This file contains the logic for handling user registration and login.
+This file contains the logic for handling user registration, login, and authentication.
 
 #### registerUser
 
